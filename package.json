@@ -25,7 +25,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TarekAlMustafa/myextension.git"
+    "url": "https://github.com/TarekAlMustafa/myextension"
   },
   "scripts": {
     "build": "jlpm build:lib && jlpm build:labextension:dev",
