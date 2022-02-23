@@ -3,8 +3,8 @@ requires = ["jupyter_packaging~=0.10,<2", "jupyterlab~=3.1"]
 build-backend = "jupyter_packaging.build_api"
 
 [tool.jupyter-packaging.options]
-skip-if-exists = ["binderTest/labextension/static/style.js"]
-ensured-targets = ["binderTest/labextension/static/style.js", "binderTest/labextension/package.json"]
+skip-if-exists = ["myextension/labextension/static/style.js"]
+ensured-targets = ["myextension/labextension/static/style.js", "myextension/labextension/package.json"]
 
 [tool.jupyter-packaging.builder]
 factory = "jupyter_packaging.npm_builder"
@@ -14,4 +14,4 @@ build_cmd = "build:prod"
 npm = ["jlpm"]
 
 [tool.check-manifest]
-ignore = ["binderTest/labextension/**", "yarn.lock", ".*", "package-lock.json"]
+ignore = ["myextension/labextension/**", "yarn.lock", ".*", "package-lock.json"]

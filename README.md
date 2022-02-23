@@ -1,12 +1,12 @@
-# binderTest
+# myextension
 
-[![Github Actions Status](https://github.com/TarekAlMustafa/BinderTest/workflows/Build/badge.svg)](https://github.com/TarekAlMustafa/BinderTest/actions/workflows/build.yml)[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/TarekAlMustafa/BinderTest/main?urlpath=lab)
+[![Github Actions Status](https://github.com/github_username/myextension/workflows/Build/badge.svg)](https://github.com/github_username/myextension/actions/workflows/build.yml)[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/github_username/myextension/main?urlpath=lab)
 
-Testing JLabBinders
+binder testing
 
 
-This extension is composed of a Python package named `binderTest`
-for the server extension and a NPM package named `binderTest`
+This extension is composed of a Python package named `myextension`
+for the server extension and a NPM package named `myextension`
 for the frontend extension.
 
 
@@ -19,7 +19,7 @@ for the frontend extension.
 To install the extension, execute:
 
 ```bash
-pip install binderTest
+pip install myextension
 ```
 
 ## Uninstall
@@ -27,7 +27,7 @@ pip install binderTest
 To remove the extension, execute:
 
 ```bash
-pip uninstall binderTest
+pip uninstall myextension
 ```
 
 
@@ -60,13 +60,13 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the binderTest directory
+# Change directory to the myextension directory
 # Install package in development mode
 pip install -e .
 # Link your development version of the extension with JupyterLab
 jupyter labextension develop . --overwrite
 # Server extension must be manually installed in develop mode
-jupyter server extension enable binderTest
+jupyter server extension enable myextension
 # Rebuild extension Typescript source after making changes
 jlpm build
 ```
@@ -92,13 +92,13 @@ jupyter lab build --minimize=False
 
 ```bash
 # Server extension must be manually disabled in develop mode
-jupyter server extension disable binderTest
-pip uninstall binderTest
+jupyter server extension disable myextension
+pip uninstall myextension
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `binderTest` within that folder.
+folder is located. Then you can remove the symlink named `myextension` within that folder.
 
 ### Packaging the extension
 

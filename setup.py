@@ -1,5 +1,5 @@
 """
-binderTest setup
+myextension setup
 """
 import json
 import sys
@@ -13,7 +13,7 @@ HERE = Path(__file__).parent.resolve()
 pkg_json = json.loads((HERE / "package.json").read_bytes())
 
 # The name of the project
-name = "binderTest"
+name = "myextension"
 
 lab_path = (HERE / pkg_json["jupyterlab"]["outputDir"])
 
@@ -29,10 +29,10 @@ data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, str(lab_path.relative_to(HERE)), "**"),
     ("share/jupyter/labextensions/%s" % labext_name, str("."), "install.json"),
     ("etc/jupyter/jupyter_server_config.d",
-     "jupyter-config/server-config", "binderTest.json"),
+     "jupyter-config/server-config", "myextension.json"),
     # For backward compatibility with notebook server
     ("etc/jupyter/jupyter_notebook_config.d",
-     "jupyter-config/nb-config", "binderTest.json"),
+     "jupyter-config/nb-config", "myextension.json"),
 ]
 
 long_description = (HERE / "README.md").read_text()

@@ -1,10 +1,10 @@
-# a mybinder.org-ready environment for demoing binderTest
+# a mybinder.org-ready environment for demoing myextension
 # this environment may also be used locally on Linux/MacOS/Windows, e.g.
 #
 #   conda env update --file binder/environment.yml
-#   conda activate binderTest-demo
+#   conda activate myextension-demo
 #
-name: binderTest-demo
+name: myextension-demo
 
 channels:
   - conda-forge
